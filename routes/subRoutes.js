@@ -28,8 +28,8 @@ const createStripeSession = async (req, res) => {
           quantity: 1,
         },
       ],
-      success_url: "http://localhost:3000/",
-      cancel_url: "http://localhost:3000/plans",
+      success_url: "https://venerable-macaron-0c4f19.netlify.app/",
+      cancel_url: "https://venerable-macaron-0c4f19.netlify.app/plans",
       customer: user.stripeCustomerId,
     },
     {
