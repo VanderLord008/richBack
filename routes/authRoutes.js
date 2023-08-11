@@ -111,5 +111,11 @@ router.post(
   body("password").isLength({ min: 5 }).withMessage("invalid password"),
   logIn
 );
+const fun=async(req,res)=>{
+  res.send("hi")
+}
+router.get(
+  "/",fun);
+
 
 export default router;
